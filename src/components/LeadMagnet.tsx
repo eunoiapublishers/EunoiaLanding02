@@ -75,7 +75,7 @@ export default function LeadMagnet() {
             {/* Product illustration */}
             <div className="hidden lg:block w-3/4 max-w-sm rounded-[1.5rem] overflow-hidden border border-stone-200 p-2 bg-white">
               <img 
-                src="/board_example.png" 
+                src="./board_example.png" 
                 alt="Beth singing with animal characters cartoon" 
                 className="w-full h-auto rounded-[1rem] shadow-sm transform hover:scale-101 transition-transform"
                 referrerPolicy="no-referrer"

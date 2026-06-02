@@ -5,25 +5,25 @@ import { ArrowLeft, ArrowRight, BookImage, CheckCircle, ExternalLink } from 'luc
 
 const SLIDES = [
   {
-    image: "/mockup.png",
+    image: "./mockup.png",
     title: "The Cover & Board Game Set",
     subtitle: "Complete printable workspace",
     desc: "Includes the original 'Beth: A Star on Stage' storybook cover and the complete colorful 11-step 'Beth's Concert Journey' path board."
   },
   {
-    image: "/picture01.png",
+    image: "./picture01.png",
     title: "Educational Resource Poster Guide",
     subtitle: "Classroom and home layout",
     desc: "A beautiful display outline indicating instructions, cards guidance, and instant digital downloads that are ready to play."
   },
   {
-    image: "/picture02.png",
+    image: "./picture02.png",
     title: "Self-Regulation Social Scenarios",
     subtitle: "Autism & neurodiversity friendly",
     desc: "Interactive visual cards teaching kids breathing loops, frustration management, and classroom/home transitions peacefully."
   },
   {
-    image: "/board_example.png",
+    image: "./board_example.png",
     title: "Charming Beth & Animal Cast",
     subtitle: "Play-focused illustrations",
     desc: "A warm visual illustration displaying Beth and creative animals on the play rug with the educational easel: Aprender, Crear, Cantar."
