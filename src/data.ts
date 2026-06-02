@@ -122,27 +122,27 @@ export const AUDIENCES: AudienceItem[] = [
 export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: "test-1",
-    role: "Teacher",
-    name: "Sarah M., M.Ed.",
-    avatarText: "SM",
-    title: "Special Education Teacher",
-    quote: "My Kindergarteners struggled massively during transitions and circle time waiting. Introducing 'Beth's Concert Star' turned lessons into an ongoing musical game! The kids constantly remind each other: 'Take a deep breath, like Beth!'"
+    role: "Behavior Analyst",
+    name: "Luis",
+    avatarText: "LU",
+    title: "Behavior Analyst",
+    quote: "It's a very useful resource because it's based on verified evidence and provides a very attractive alternative for children who can learn and develop emotional skills through play."
   },
   {
     id: "test-2",
     role: "Parent",
-    name: "Jessica K.",
-    avatarText: "JK",
-    title: "Mother of 6yo Autistic Boy",
-    quote: "Most social stories feel clinical and uninviting. This story and board game are absolutely gorgeous and feel so loving and welcoming! My son loves moving his token across the stage, and we use the card count downs at dinner table successfully."
+    name: "Julia",
+    avatarText: "JU",
+    title: "Mother",
+    quote: "My autistic son and my neurotypical son really enjoy playing together. I think it helps them both manage their emotions, and the design is very appealing."
   },
   {
     id: "test-3",
-    role: "Therapist",
-    name: "David L., OTR/L",
-    avatarText: "DL",
-    title: "Pediatric Occupational Therapist",
-    quote: "I use this resource in my group OT sessions. The illustrations are neurodiversity-affirming, showing helpful regulation options like breathing deeply and setting standard timers. It's an essential SEL toolkit!"
+    role: "Teacher",
+    name: "Ryan",
+    avatarText: "RY",
+    title: "Teacher",
+    quote: "As an adaptive resource, it's very useful in the classroom because it combines very important tasks such as reading, emotional skills, and fine motor skills exercises. Highly recommended."
   }
 ];
 

@@ -56,15 +56,6 @@ export default function Hero() {
               <span>Get the Resource</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            
-            <button
-              onClick={scrollToForm}
-              className="flex items-center justify-center gap-2 bg-white hover:bg-stone-100 text-stone-900 border border-stone-200 hover:border-stone-300 font-heading font-bold text-base py-3.5 px-8 rounded-2xl shadow-md transition-all transform hover:-translate-y-1 backdrop-blur-md"
-              id="hero-secondary-cta"
-            >
-              <span>Download Free Preview</span>
-              <ArrowDown className="w-4 h-4 text-[#FFD86A]" />
-            </button>
           </div>
 
           {/* Trust Indicators */}

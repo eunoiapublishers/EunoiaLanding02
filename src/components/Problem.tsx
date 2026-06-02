@@ -34,58 +34,33 @@ export default function Problem() {
           </p>
         </div>
 
-        {/* Two-Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Central Column: Illustrated Cards */}
+        <div className="max-w-3xl mx-auto flex flex-col gap-4">
+          <h3 className="font-heading font-bold text-xl md:text-2xl text-stone-900 mb-2 flex items-center gap-2">
+            <span className="text-[#FFD86A]">⚠️</span> Common Roadblocks Children Face:
+          </h3>
           
-          {/* Left Column: Illustrated Cards */}
-          <div className="lg:col-span-6 flex flex-col gap-4">
-            <h3 className="font-heading font-bold text-xl md:text-2xl text-stone-900 mb-2 flex items-center gap-2">
-              <span className="text-[#FFD86A]">⚠️</span> Common Roadblocks Children Face:
-            </h3>
-            
-            <div className="grid grid-cols-1 gap-4">
-              {PROBLEM_PINPOINTS.map((pin, idx) => (
-                <motion.div
-                  key={pin.id}
-                  initial={{ opacity: 0, y: 15 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ delay: idx * 0.1, duration: 0.4 }}
-                  className={`flex gap-4 p-4 rounded-2xl border bg-white/40 backdrop-blur-md skew-card transition-all ${cardColors[idx]}`}
-                >
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center border border-stone-200 shadow-lg">
-                    {icons[idx]}
-                  </div>
-                  <div className="flex flex-col justify-center">
-                    <p className="font-sans font-bold text-stone-700 text-sm md:text-base">
-                      {pin.text}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {PROBLEM_PINPOINTS.map((pin, idx) => (
+              <motion.div
+                key={pin.id}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ delay: idx * 0.1, duration: 0.4 }}
+                className={`flex gap-4 p-4 rounded-2xl border bg-white/40 backdrop-blur-md skew-card transition-all ${cardColors[idx]}`}
+              >
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center border border-stone-200 shadow-lg">
+                  {icons[idx]}
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="font-sans font-bold text-stone-700 text-sm md:text-base">
+                    {pin.text}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
-
-          {/* Right Column: Visual Graphic representation of Beth's feelings */}
-          <div className="lg:col-span-6">
-            <div className="relative group">
-              {/* Backglow layer */}
-              <div className="absolute inset-0 bg-white rounded-[2rem] transform -rotate-2 scale-102 border border-stone-200 backdrop-blur-xl" />
-              
-              <img 
-                src={`${import.meta.env.BASE_URL}picture02.png`} 
-                alt="Illustrations of Beth showing emotional frustrations and deep breathing self-regulation" 
-                className="w-full h-auto rounded-[2rem] border border-stone-200 bg-white relative z-10 transition-transform duration-300 group-hover:scale-[1.01]"
-                referrerPolicy="no-referrer"
-                id="problem-side-illustration"
-              />
-              
-              <div className="absolute top-4 right-4 bg-stone-50/90 backdrop-blur-md text-[#FFD86A] font-sans font-bold text-xs py-2 px-3 rounded-xl shadow-md border border-stone-200 z-20">
-                💭 Emotional Regulation & Guidance
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
