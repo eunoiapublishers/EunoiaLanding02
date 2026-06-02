@@ -54,21 +54,21 @@ export const HOW_IT_HELPS_PILLARS = [
     title: "Social Story Book",
     description: "Teaches the core waiting skills through an engaging, relatable, neurodiversity-affirming story starring Beth, helping children conceptualize patience.",
     benefit: "Connects emotionally and reduces power struggles.",
-    imageUrl: "./picture02.png" // Neurodiversity illustrations
+    imageUrl: `${import.meta.env.BASE_URL}picture02.png` // Neurodiversity illustrations
   },
   {
     id: "pillar-2",
     title: "Visual Supports",
     description: "Equips parents and educators with visual reinforcement, visual countdowns, and timers to support cognitive predictability and self-regulation.",
     benefit: "Creates clear, stress-free boundaries.",
-    imageUrl: "./picture01.png" // Poster with visual structure
+    imageUrl: `${import.meta.env.BASE_URL}picture01.png` // Poster with visual structure
   },
   {
     id: "pillar-3",
     title: "Interactive Board Game",
     description: "Transforms patient practice into structured play! Children guide Beth through her concert journey, practicing real-life scenarios actively.",
     benefit: "Makes skill training positive and fun.",
-    imageUrl: "./mockup.png" // Board game + cards composite
+    imageUrl: `${import.meta.env.BASE_URL}mockup.png` // Board game + cards composite
   }
 ];
 

@@ -20,7 +20,7 @@ export default function Header() {
           className="flex items-center gap-3 group"
         >
           <img 
-            src="./logo_eunoia.png" 
+            src={`${import.meta.env.BASE_URL}logo_eunoia.png`} 
             alt="Eunoia Learning Logo" 
             className="w-10 h-10 md:w-11 md:h-11 object-contain transition-transform group-hover:rotate-6 duration-300 bg-white/20 p-1 rounded-full border border-stone-200"
             referrerPolicy="no-referrer"

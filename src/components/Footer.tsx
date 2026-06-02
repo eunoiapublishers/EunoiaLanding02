@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="md:col-span-5 flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <img 
-              src="./logo_eunoia.png" 
+              src={`${import.meta.env.BASE_URL}logo_eunoia.png`} 
               alt="Eunoia Learning Logo" 
               className="w-10 h-10 object-contain bg-white border border-stone-200 rounded-full p-0.5 animate-pulse" 
               referrerPolicy="no-referrer"

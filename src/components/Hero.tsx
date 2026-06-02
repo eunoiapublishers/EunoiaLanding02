@@ -102,7 +102,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#5B3DB5] to-[#F05D9B] rounded-[2.5rem] transform rotate-3 scale-102 opacity-20 shadow-xl group-hover:rotate-1 transition-transform duration-300" />
             
             <img 
-              src="./mockup.png" 
+              src={`${import.meta.env.BASE_URL}mockup.png`} 
               alt="Beth's Concert Star Storybook, Board Game and Card Deck Product Mockup" 
               className="w-full h-auto rounded-[2rem] shadow-2xl border border-stone-200 bg-white/50 backdrop-blur-md transition-transform duration-300 group-hover:scale-101 relative z-10"
               referrerPolicy="no-referrer"

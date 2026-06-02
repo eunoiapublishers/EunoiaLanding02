@@ -73,7 +73,7 @@ export default function Problem() {
               <div className="absolute inset-0 bg-white rounded-[2rem] transform -rotate-2 scale-102 border border-stone-200 backdrop-blur-xl" />
               
               <img 
-                src="./picture02.png" 
+                src={`${import.meta.env.BASE_URL}picture02.png`} 
                 alt="Illustrations of Beth showing emotional frustrations and deep breathing self-regulation" 
                 className="w-full h-auto rounded-[2rem] border border-stone-200 bg-white relative z-10 transition-transform duration-300 group-hover:scale-[1.01]"
                 referrerPolicy="no-referrer"
