@@ -10,47 +10,49 @@
   --color-pink-brand: #F05D9B;
   --color-turquoise-brand: #19B7C9;
   --color-yellow-brand: #FFD86A;
-  --color-[#FFF9F4]: #0b071e;
+  --color-bg-primary: #FAFAFA;
 }
 
 @layer base {
   body {
-    background-color: #0b071e;
+    background-color: #FAFAFA;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(240, 93, 155, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(25, 183, 201, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(255, 216, 106, 0.05) 0%, transparent 100%);
     background-attachment: fixed;
-    background-image: radial-gradient(circle at 10% 20%, #20134a 0%, transparent 40%), 
-                      radial-gradient(circle at 90% 80%, #30143a 0%, transparent 40%),
-                      radial-gradient(circle at 50% 50%, #0e0a23 0%, #05030f 100%);
-    color: #ebdcfc;
+    color: #1c1917; /* Text stone-900 */
     font-family: var(--font-sans);
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    color: #0c0a09;
   }
 }
 
-/* Glassmorphism Styles */
+/* Glassmorphism Styles for Light Theme */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08); /* slightly transparent border */
-  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
 .glass-panel-heavy {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 50px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
 }
 
 .glass-panel-subtle {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 /* Text Gradient */
@@ -58,7 +60,7 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #ffffff 10%, #d4c5f9 50%, #f05d9b 100%);
+  background-image: linear-gradient(to right, #5B3DB5 10%, #F05D9B 50%, #19B7C9 100%);
 }
 
 /* Custom animated bubbles for playfulness */

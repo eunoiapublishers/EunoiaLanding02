@@ -26,8 +26,8 @@ export default function LeadMagnet() {
   };
 
   return (
-    <section id="lead-magnet" className="py-20 md:py-28 px-4 md:px-8 bg-transparent border-t border-b border-white/10">
-      <div className="max-w-6xl mx-auto bg-white/[0.03] backdrop-blur-xl rounded-[3rem] border border-white/15 shadow-2xl p-6 md:p-12 relative overflow-hidden">
+    <section id="lead-magnet" className="py-20 md:py-28 px-4 md:px-8 bg-transparent border-t border-b border-stone-200">
+      <div className="max-w-6xl mx-auto bg-white/40 backdrop-blur-xl rounded-[3rem] border border-stone-200 shadow-2xl p-6 md:p-12 relative overflow-hidden">
         
         {/* Soft background decor */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD86A]/10 rounded-full blur-2xl pointer-events-none" />
@@ -37,16 +37,16 @@ export default function LeadMagnet() {
           
           {/* Left Block: Graphic details */}
           <div className="lg:col-span-6 flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 bg-white/5 text-[#F05D9B] font-heading font-bold text-xs md:text-sm px-4.5 py-1.5 border border-white/10 rounded-full w-fit">
+            <div className="inline-flex items-center gap-2 bg-white text-[#F05D9B] font-heading font-bold text-xs md:text-sm px-4.5 py-1.5 border border-stone-200 rounded-full w-fit">
               <Gift className="w-4 h-4 text-[#F05D9B]" />
               <span>Get Your Free Gift!</span>
             </div>
 
-            <h2 className="font-heading font-black text-3xl md:text-5xl text-white leading-tight">
+            <h2 className="font-heading font-black text-3xl md:text-5xl text-stone-900 leading-tight">
               Get the Waiting Skills Starter Kit — Free!
             </h2>
 
-            <p className="font-sans text-slate-300 text-base md:text-lg leading-relaxed">
+            <p className="font-sans text-stone-600 text-base md:text-lg leading-relaxed">
               Sign up today to receive a free introductory preview of the storybook, a printable mini-game board, and a set of patience countdown cards to test straight away at home or in your class!
             </p>
 
@@ -54,28 +54,28 @@ export default function LeadMagnet() {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5.5 h-5.5 text-[#19B7C9] shrink-0 mt-0.5" />
-                <span className="font-sans text-slate-200 font-bold text-sm md:text-base">
+                <span className="font-sans text-stone-700 font-bold text-sm md:text-base">
                   Print-ready 4-page PDF download
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5.5 h-5.5 text-[#19B7C9] shrink-0 mt-0.5" />
-                <span className="font-sans text-slate-200 font-bold text-sm md:text-base">
+                <span className="font-sans text-stone-700 font-bold text-sm md:text-base">
                   Intro story cards with Beth
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5.5 h-5.5 text-[#19B7C9] shrink-0 mt-0.5" />
-                <span className="font-sans text-slate-200 font-bold text-sm md:text-base">
+                <span className="font-sans text-stone-700 font-bold text-sm md:text-base">
                   Ideal for teachers, parents & therapists
                 </span>
               </div>
             </div>
 
             {/* Product illustration */}
-            <div className="hidden lg:block w-3/4 max-w-sm rounded-[1.5rem] overflow-hidden border border-white/10 p-2 bg-white/5">
+            <div className="hidden lg:block w-3/4 max-w-sm rounded-[1.5rem] overflow-hidden border border-stone-200 p-2 bg-white">
               <img 
-                src="/input_file_4.png" 
+                src="/board_example.png" 
                 alt="Beth singing with animal characters cartoon" 
                 className="w-full h-auto rounded-[1rem] shadow-sm transform hover:scale-101 transition-transform"
                 referrerPolicy="no-referrer"
@@ -85,17 +85,17 @@ export default function LeadMagnet() {
 
           {/* Right Block: Mailerlite Embedded Form styled to meet playful standards */}
           <div className="lg:col-span-6">
-            <div className="bg-[#0c0822]/85 backdrop-blur-lg rounded-[2.5rem] border border-white/15 p-6 md:p-8 shadow-2xl">
+            <div className="bg-white/85 backdrop-blur-lg rounded-[2.5rem] border border-stone-200 p-6 md:p-8 shadow-2xl">
               
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-[#F05D9B] flex items-center justify-center text-white">
+                <div className="w-10 h-10 rounded-xl bg-[#F05D9B] flex items-center justify-center text-stone-900">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-black text-lg text-white">
+                  <h3 className="font-heading font-black text-lg text-stone-900">
                     Subscribe & Download Premades
                   </h3>
-                  <span className="font-sans text-xs text-slate-400">
+                  <span className="font-sans text-xs text-stone-500">
                     Your information is 100% secure. Unsubscribe anytime.
                   </span>
                 </div>
@@ -105,16 +105,16 @@ export default function LeadMagnet() {
                 <motion.div 
                    initial={{ opacity: 0, scale: 0.95 }}
                    animate={{ opacity: 1, scale: 1 }}
-                   className="bg-[#062419]/90 backdrop-blur-md rounded-3xl border border-emerald-500/30 p-8 text-center flex flex-col gap-4 items-center shadow-2xl"
+                   className="bg-emerald-50/90 backdrop-blur-md rounded-3xl border border-emerald-500/30 p-8 text-center flex flex-col gap-4 items-center shadow-2xl"
                 >
-                  <div className="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 border border-emerald-500/30">
+                  <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 border border-emerald-200">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-black text-xl text-emerald-300">
+                    <h4 className="font-heading font-black text-xl text-emerald-800">
                       Awesome, You're Registered!
                     </h4>
-                    <p className="font-sans text-slate-300 text-sm mt-2">
+                    <p className="font-sans text-stone-600 text-sm mt-2">
                       Please check your inbox. If you aren't redirected, your printable 'Beth\'s Waiting Skills' preview starter guide is waiting for you!
                     </p>
                   </div>
@@ -138,14 +138,14 @@ export default function LeadMagnet() {
                   
                   {/* First Name Field */}
                   <div className="flex flex-col gap-1.5">
-                    <label className="font-heading font-bold text-slate-200 text-sm flex items-center gap-1.5">
+                    <label className="font-heading font-bold text-stone-700 text-sm flex items-center gap-1.5">
                       <span>Introduce Yourself *</span>
                     </label>
                     <input 
                       aria-label="name" 
                       type="text" 
                       required
-                      className="w-full px-4 py-3 rounded-2xl border border-white/15 outline-none focus:border-[#F05D9B] bg-white/5 font-sans text-white text-sm transition-all shadow-sm focus:ring-1 focus:ring-[#F05D9B] placeholder-slate-500" 
+                      className="w-full px-4 py-3 rounded-2xl border border-stone-200 outline-none focus:border-[#F05D9B] bg-white font-sans text-stone-900 text-sm transition-all shadow-sm focus:ring-1 focus:ring-[#F05D9B] placeholder-slate-500" 
                       name="fields[name]" 
                       placeholder="Your First Name" 
                       autoComplete="given-name"
@@ -154,7 +154,7 @@ export default function LeadMagnet() {
 
                   {/* Email Field */}
                   <div className="flex flex-col gap-1.5">
-                    <label className="font-heading font-bold text-slate-200 text-sm">
+                    <label className="font-heading font-bold text-stone-700 text-sm">
                       <span>Where to send your preview PDF? *</span>
                     </label>
                     <input 
@@ -162,7 +162,7 @@ export default function LeadMagnet() {
                       aria-required="true" 
                       type="email" 
                       required
-                      className="w-full px-4 py-3 rounded-2xl border border-white/15 outline-none focus:border-[#F05D9B] bg-white/5 font-sans text-white text-sm transition-all shadow-sm focus:ring-1 focus:ring-[#F05D9B] placeholder-slate-500"  
+                      className="w-full px-4 py-3 rounded-2xl border border-stone-200 outline-none focus:border-[#F05D9B] bg-white font-sans text-stone-900 text-sm transition-all shadow-sm focus:ring-1 focus:ring-[#F05D9B] placeholder-slate-500"  
                       name="fields[email]" 
                       placeholder="your.best.email@example.com" 
                       autoComplete="email"
@@ -171,25 +171,25 @@ export default function LeadMagnet() {
 
                   {/* Subscriber Type Custom Option select element */}
                   <div className="flex flex-col gap-1.5">
-                    <label className="font-heading font-bold text-slate-200 text-sm">
+                    <label className="font-heading font-bold text-stone-700 text-sm">
                       <span>Which best describes you? *</span>
                     </label>
                     <div className="relative">
                       <select 
-                        className="w-full px-4 py-3 rounded-2xl border border-white/15 outline-none focus:border-[#F05D9B] bg-[#0c0822] font-sans text-white text-sm transition-all shadow-sm appearance-none cursor-pointer pr-10" 
+                        className="w-full px-4 py-3 rounded-2xl border border-stone-200 outline-none focus:border-[#F05D9B] bg-stone-50 font-sans text-stone-900 text-sm transition-all shadow-sm appearance-none cursor-pointer pr-10" 
                         name="fields[suscriber_type]" 
                         aria-label="suscriber_type" 
                         required
                         aria-required="true"
                         defaultValue=""
                       >
-                        <option value="" disabled className="bg-[#0c0822]">Select your role...</option>
-                        <option value="Parent" className="bg-[#0c0822]">Parent / Caregiver</option>
-                        <option value="Teacher" className="bg-[#0c0822]">Teacher / Educator</option>
-                        <option value="Therapist" className="bg-[#0c0822]">Therapist (Speech, OT, ABA)</option>
-                        <option value="Other" className="bg-[#0c0822]">Other Helper</option>
+                        <option value="" disabled className="bg-stone-50">Select your role...</option>
+                        <option value="Parent" className="bg-stone-50">Parent / Caregiver</option>
+                        <option value="Teacher" className="bg-stone-50">Teacher / Educator</option>
+                        <option value="Therapist" className="bg-stone-50">Therapist (Speech, OT, ABA)</option>
+                        <option value="Other" className="bg-stone-50">Other Helper</option>
                       </select>
-                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-stone-500">
                         ▼
                       </div>
                     </div>
@@ -209,7 +209,7 @@ export default function LeadMagnet() {
                   </button>
 
                   <div className="text-center mt-2">
-                    <span className="font-sans text-[11px] text-slate-400">
+                    <span className="font-sans text-[11px] text-stone-500">
                       By submitting you agree to receive future tips & printable updates.
                     </span>
                   </div>

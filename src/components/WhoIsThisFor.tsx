@@ -15,14 +15,14 @@ const gradientBorders = [
 ];
 
 const checkIconsBg = [
-  "bg-[#5B3DB5]/20 text-white border border-[#5B3DB5]/40",
-  "bg-[#19B7C9]/20 text-white border border-[#19B7C9]/40",
-  "bg-[#F05D9B]/20 text-white border border-[#F05D9B]/40"
+  "bg-[#5B3DB5]/20 text-stone-900 border border-[#5B3DB5]/40",
+  "bg-[#19B7C9]/20 text-stone-900 border border-[#19B7C9]/40",
+  "bg-[#F05D9B]/20 text-stone-900 border border-[#F05D9B]/40"
 ];
 
 export default function WhoIsThisFor() {
   return (
-    <section id="audiences" className="py-20 md:py-28 px-4 md:px-8 bg-transparent border-b border-white/10">
+    <section id="audiences" className="py-20 md:py-28 px-4 md:px-8 bg-transparent border-b border-stone-200">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -30,11 +30,11 @@ export default function WhoIsThisFor() {
           <span className="text-[#FFD86A] font-heading font-bold text-xs md:text-sm uppercase tracking-widest block mb-2">
             Target Audiences
           </span>
-          <h2 className="font-heading font-black text-3xl md:text-5xl text-white">
+          <h2 className="font-heading font-black text-3xl md:text-5xl text-stone-900">
             Who Is This Resource For?
           </h2>
           <div className="w-16 h-1 bg-[#19B7C9] rounded-full mx-auto mt-4" />
-          <p className="font-sans text-base md:text-lg text-slate-300 mt-4 leading-relaxed">
+          <p className="font-sans text-base md:text-lg text-stone-600 mt-4 leading-relaxed">
             The storybook and board game are versatile tools designed to thrive in any learning or treatment environment.
           </p>
         </div>
@@ -53,10 +53,10 @@ export default function WhoIsThisFor() {
               
               {/* Header: Title and Icon */}
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+                <div className="w-14 h-14 rounded-2xl bg-white border border-stone-200 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
                   {icons[idx]}
                 </div>
-                <h3 className="font-heading font-black text-2xl text-white">
+                <h3 className="font-heading font-black text-2xl text-stone-900">
                   {aud.title}
                 </h3>
               </div>
@@ -69,10 +69,10 @@ export default function WhoIsThisFor() {
                       <Check className="w-3.5 h-3.5 stroke-[3]" />
                     </div>
                     <div>
-                      <h4 className="font-heading font-bold text-sm md:text-base text-white">
+                      <h4 className="font-heading font-bold text-sm md:text-base text-stone-900">
                         {pt.title}
                       </h4>
-                      <p className="font-sans text-xs md:text-sm text-slate-300 mt-0.5 leading-relaxed">
+                      <p className="font-sans text-xs md:text-sm text-stone-600 mt-0.5 leading-relaxed">
                         {pt.desc}
                       </p>
                     </div>

@@ -6,8 +6,8 @@ Esta es la landing page profesional y optimizada para el infoproducto **Beth's C
 
 ## 🎨 Características de Diseño e Interactividad
 
-1. **Spotlight Hero Section**: Presenta de forma atractiva el mockup principal (`/input_file_0.png`) junto con botones de llamada a la acción (CTA) y sellos de confianza.
-2. **Cards de Dolores Comunes (Sección del Problema)**: Describe por qué esperar es difícil, empleando tarjetas interactivas e ilustraciones neurodivergentes de Beth (`/input_file_3.png`).
+1. **Spotlight Hero Section**: Presenta de forma atractiva el mockup principal (`/mockup.png`) junto con botones de llamada a la acción (CTA) y sellos de confianza.
+2. **Cards de Dolores Comunes (Sección del Problema)**: Describe por qué esperar es difícil, empleando tarjetas interactivas e ilustraciones neurodivergentes de Beth (`/picture02.png`).
 3. **Pilares de Solución**: Presenta de forma analítica el libro de historias sociales, los apoyos visuales y el juego de mesa interactivo.
 4. **Galería Carrusel Interactiva**: Un diapositiva de imágenes de alta resolución sin librerías pesadas, ideal para optimizar tiempos de carga.
 5. **Sección de Plomo y Captura**: Incorpora y estiliza el formulario de suscripción de **MailerLite** adaptándose a la visualidad del proyecto.

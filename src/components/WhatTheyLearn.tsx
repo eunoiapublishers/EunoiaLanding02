@@ -27,7 +27,7 @@ const cardBgColors = [
 
 export default function WhatTheyLearn() {
   return (
-    <section className="py-20 md:py-28 px-4 md:px-8 bg-transparent border-b border-white/10">
+    <section className="py-20 md:py-28 px-4 md:px-8 bg-transparent border-b border-stone-200">
       <div className="max-w-7xl mx-auto">
         
         {/* Title details */}
@@ -35,11 +35,11 @@ export default function WhatTheyLearn() {
           <span className="text-[#FFD86A] font-heading font-bold text-xs md:text-sm uppercase tracking-wider block mb-2">
             Social-Emotional Competence
           </span>
-          <h2 className="font-heading font-black text-3xl md:text-5xl text-white">
+          <h2 className="font-heading font-black text-3xl md:text-5xl text-stone-900">
             What Children Learn & Master
           </h2>
           <div className="w-20 h-1.5 bg-[#F05D9B] rounded-full mx-auto mt-4" />
-          <p className="font-sans text-base md:text-lg text-slate-300 mt-4 leading-relaxed">
+          <p className="font-sans text-base md:text-lg text-stone-600 mt-4 leading-relaxed">
             By reading Beth's journey and playing the companion game, children develop clinical self-soothing behaviors and healthy interactive skills:
           </p>
         </div>
@@ -57,16 +57,16 @@ export default function WhatTheyLearn() {
             >
               
               {/* Icon Holder */}
-              <div className="w-11 h-11 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 shadow-lg flex-shrink-0">
+              <div className="w-11 h-11 bg-white rounded-2xl flex items-center justify-center border border-stone-200 shadow-lg flex-shrink-0">
                 {icons[idx]}
               </div>
 
               {/* Skill Description */}
               <div>
-                <h3 className="font-heading font-bold text-lg text-white mb-1">
+                <h3 className="font-heading font-bold text-lg text-stone-900 mb-1">
                   {skill.title}
                 </h3>
-                <p className="font-sans text-xs md:text-sm text-slate-300 leading-relaxed">
+                <p className="font-sans text-xs md:text-sm text-stone-600 leading-relaxed">
                   {skill.description}
                 </p>
               </div>

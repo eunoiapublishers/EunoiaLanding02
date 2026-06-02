@@ -11,7 +11,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-transparent py-14 md:py-24 px-4 md:px-8 border-b border-white/10">
+    <section className="relative overflow-hidden bg-transparent py-14 md:py-24 px-4 md:px-8 border-b border-stone-200">
       {/* Decorative Pastel Bubbles with more neon glow */}
       <div className="absolute top-10 left-10 w-24 h-24 bg-[#FFD86A]/10 rounded-full blur-2xl bubble-animation" style={{ animationDelay: '0s' }} />
       <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#19B7C9]/10 rounded-full blur-2xl bubble-animation" style={{ animationDelay: '2s' }} />
@@ -27,20 +27,20 @@ export default function Hero() {
           className="lg:col-span-7 flex flex-col gap-6"
         >
           {/* Tagline / Indicator */}
-          <div className="inline-flex items-center gap-2 bg-white/5 text-[#d4c5f9] font-heading font-bold text-xs md:text-sm px-4 py-2 rounded-full w-fit border border-white/10 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 bg-white text-purple-700 font-heading font-bold text-xs md:text-sm px-4 py-2 rounded-full w-fit border border-stone-200 backdrop-blur-md">
             <Sparkles className="w-4 h-4 fill-[#FFD86A] text-[#FFD86A]" />
             <span>Introducing Beth's Concert Star Bundle</span>
           </div>
 
           {/* Main Title */}
           <h1 className="font-heading font-black text-3xl md:text-5xl lg:text-6xl tracking-tight leading-tight">
-            <span className="text-white">Help Children Learn to Wait Their Turn—</span>
+            <span className="text-stone-900">Help Children Learn to Wait Their Turn—</span>
             <br />
             <span className="text-glow-gradient">Without Tears, Frustration, or Power Struggles</span>
           </h1>
 
           {/* Subheading */}
-          <p className="font-sans text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
+          <p className="font-sans text-base md:text-lg lg:text-xl text-stone-600 leading-relaxed max-w-2xl">
             A pediatric-approved social story and interactive board game designed to teach children patience, self-regulation, and turn-taking in a supportive, play-based way.
           </p>
 
@@ -59,7 +59,7 @@ export default function Hero() {
             
             <button
               onClick={scrollToForm}
-              className="flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white border border-white/20 hover:border-white/40 font-heading font-bold text-base py-3.5 px-8 rounded-2xl shadow-md transition-all transform hover:-translate-y-1 backdrop-blur-md"
+              className="flex items-center justify-center gap-2 bg-white hover:bg-stone-100 text-stone-900 border border-stone-200 hover:border-stone-300 font-heading font-bold text-base py-3.5 px-8 rounded-2xl shadow-md transition-all transform hover:-translate-y-1 backdrop-blur-md"
               id="hero-secondary-cta"
             >
               <span>Download Free Preview</span>
@@ -68,24 +68,24 @@ export default function Hero() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-white/10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-stone-200">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-[#19B7C9]/20 flex items-center justify-center border border-[#19B7C9]/40">
                 <Check className="w-3.5 h-3.5 text-[#1aebff] stroke-[3.5]" />
               </div>
-              <span className="font-sans font-semibold text-sm text-slate-300">Printable Resource</span>
+              <span className="font-sans font-semibold text-sm text-stone-600">Printable Resource</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-[#19B7C9]/20 flex items-center justify-center border border-[#19B7C9]/40">
                 <Check className="w-3.5 h-3.5 text-[#1aebff] stroke-[3.5]" />
               </div>
-              <span className="font-sans font-semibold text-sm text-slate-300">Neurodiversity Friendly</span>
+              <span className="font-sans font-semibold text-sm text-stone-600">Neurodiversity Friendly</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-[#19B7C9]/20 flex items-center justify-center border border-[#19B7C9]/40">
                 <Check className="w-3.5 h-3.5 text-[#1aebff] stroke-[3.5]" />
               </div>
-              <span className="font-sans font-semibold text-sm text-slate-300">Home & Classroom Use</span>
+              <span className="font-sans font-semibold text-sm text-stone-600">Home & Classroom Use</span>
             </div>
           </div>
         </motion.div>
@@ -102,9 +102,9 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#5B3DB5] to-[#F05D9B] rounded-[2.5rem] transform rotate-3 scale-102 opacity-20 shadow-xl group-hover:rotate-1 transition-transform duration-300" />
             
             <img 
-              src="/input_file_0.png" 
+              src="/mockup.png" 
               alt="Beth's Concert Star Storybook, Board Game and Card Deck Product Mockup" 
-              className="w-full h-auto rounded-[2rem] shadow-2xl border border-white/20 bg-slate-950/20 backdrop-blur-md transition-transform duration-300 group-hover:scale-101 relative z-10"
+              className="w-full h-auto rounded-[2rem] shadow-2xl border border-stone-200 bg-white/50 backdrop-blur-md transition-transform duration-300 group-hover:scale-101 relative z-10"
               referrerPolicy="no-referrer"
               id="hero-mockup-img"
             />
@@ -115,7 +115,7 @@ export default function Hero() {
             </div>
 
             {/* Float badge 2 */}
-            <div className="absolute -top-4 -right-4 bg-[#19B7C9] text-white font-heading font-bold text-xs md:text-sm px-4 py-2.5 rounded-2xl shadow-lg border border-[#19B7C9]/40 transform rotate-6 z-20">
+            <div className="absolute -top-4 -right-4 bg-[#19B7C9] text-stone-900 font-heading font-bold text-xs md:text-sm px-4 py-2.5 rounded-2xl shadow-lg border border-[#19B7C9]/40 transform rotate-6 z-20">
               🎉 11 Guidance Cards!
             </div>
           </div>
