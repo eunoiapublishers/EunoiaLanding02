@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Fredoka", sans-serif;
+  --font-sans: "Nunito", sans-serif;
+  
+  --color-purple-primary: #5B3DB5;
+  --color-pink-brand: #F05D9B;
+  --color-turquoise-brand: #19B7C9;
+  --color-yellow-brand: #FFD86A;
+  --color-[#FFF9F4]: #0b071e;
+}
+
+@layer base {
+  body {
+    background-color: #0b071e;
+    background-attachment: fixed;
+    background-image: radial-gradient(circle at 10% 20%, #20134a 0%, transparent 40%), 
+                      radial-gradient(circle at 90% 80%, #30143a 0%, transparent 40%),
+                      radial-gradient(circle at 50% 50%, #0e0a23 0%, #05030f 100%);
+    color: #ebdcfc;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08); /* slightly transparent border */
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-panel-heavy {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 50px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Text Gradient */
+.text-glow-gradient {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #ffffff 10%, #d4c5f9 50%, #f05d9b 100%);
+}
+
+/* Custom animated bubbles for playfulness */
+.bubble-animation {
+  animation: floatBubble 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatBubble {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-12px) rotate(3deg); }
+}
+
+.skew-card {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s, border-color 0.3s;
+}
+.skew-card:hover {
+  transform: translateY(-5px) rotate(-1.5deg) scale(1.02);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 254, 255, 0.2);
+}
+

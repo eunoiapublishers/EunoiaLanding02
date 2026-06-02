@@ -1,0 +1,6 @@
+{
+  "name": "Beth's Concert Star",
+  "description": "A social story and printable board game designed to teach patience, self-regulation, and confidence for children.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
